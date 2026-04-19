@@ -1,0 +1,137 @@
+# ================================================================
+#  .gitignore — API REST en .NET Core + Proyecto de Pruebas
+# ================================================================
+ 
+ 
+# ----------------------------------------------------------------
+#  ARTEFACTOS DE COMPILACIÓN
+#  Generados por: dotnet build / dotnet publish / dotnet test
+# ----------------------------------------------------------------
+**/bin/
+**/obj/
+**/publish/
+**/out/
+ 
+# Resultados de pruebas
+**/TestResults/
+**/*.trx
+**/*.coverage
+**/*.coveragexml
+coverage-report/
+ 
+ 
+# ----------------------------------------------------------------
+#  PAQUETES NUGET
+#  Se restauran con: dotnet restore
+# ----------------------------------------------------------------
+**/packages/
+*.nupkg
+*.snupkg
+.nuget/
+nuget.config.local
+ 
+ 
+# ----------------------------------------------------------------
+#  VISUAL STUDIO
+# ----------------------------------------------------------------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+.idea/
+ 
+# Archivos de proyecto generados automáticamente
+*.vcxproj.filters
+*.vcxproj.user
+ 
+# Caché de NuGet en Visual Studio
+*.VC.db
+*.VC.VC.opendb
+ 
+ 
+# ----------------------------------------------------------------
+#  VS CODE
+# ----------------------------------------------------------------
+.vscode/
+# Excepción: sí versionar configuración compartida del equipo
+# (descomente si el equipo acordó compartir estas config)
+# !.vscode/launch.json
+# !.vscode/tasks.json
+# !.vscode/extensions.json
+ 
+ 
+# ----------------------------------------------------------------
+#  RIDER / JETBRAINS
+# ----------------------------------------------------------------
+.idea/
+*.sln.iml
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+ 
+ 
+# ----------------------------------------------------------------
+#  SECRETOS Y CONFIGURACIÓN LOCAL
+#  NUNCA subir credenciales, cadenas de conexión ni API keys
+# ----------------------------------------------------------------
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.env
+*.env.local
+.env.*
+ 
+# User Secrets de .NET (almacenados fuera del repo por defecto,
+# pero por si alguien los copia al proyecto)
+**/secrets.json
+ 
+ 
+# ----------------------------------------------------------------
+#  DOCKER (archivos locales, no el Dockerfile principal)
+# ----------------------------------------------------------------
+.dockerignore.local
+docker-compose.override.yml
+ 
+ 
+# ----------------------------------------------------------------
+#  LOGS Y DATOS TEMPORALES
+# ----------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+Logs/
+logs/
+*.pid
+ 
+ 
+# ----------------------------------------------------------------
+#  SISTEMA OPERATIVO
+# ----------------------------------------------------------------
+ 
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+ 
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+ 
+# Linux
+*~
+ 
+ 
+# ----------------------------------------------------------------
+#  REPORTES DE COBERTURA DE PRUEBAS
+# ----------------------------------------------------------------
+lcov.info
+*.lcov
+coverage/
+CoverageReport/
